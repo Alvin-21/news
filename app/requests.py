@@ -17,4 +17,3 @@ def configure_request(app):
     article_url = app.config["ARTICLE_BASE_URL"]
     topheadline_url = app.config["TOP_HEADLINES_URL"]
 
-    
