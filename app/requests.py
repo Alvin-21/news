@@ -108,3 +108,22 @@ def process_articles(articles_list):
             articles_results.append(articles_object)
 
     return articles_results
+
+def get_topheadlines():
+    '''
+    This is the function that gets the json response to our url request.
+    '''
+
+    get_topheadlines_url = topheadline_url.format(api_key)
+
+    with urllib.request.urlopen(get_topheadlines_url) as url:
+        get_topheadlines_data = url.read()
+        get_topheadlines_response = json.loads(get_topheadlines_data)
+
+        topheadlines_results = None
+
+        if get_topheadlines_response ['articles']:
+            topheadlines_results_list = get_topheadlines_response['articles']
+            topheadlines_results = process_articles(topheadlines_results_list)
+
+    return topheadlines_results
