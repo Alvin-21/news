@@ -20,3 +20,15 @@ def index():
     title = "Home | News Sources"
 
     return render_template('index.html', title=title, business=business_news, entertainment=entertainment_news, general=general_news, health=health_news, science=science_news, sports=sports_news, technology=technology_news)
+
+@main.route('/articles/<source_id>')
+def articles(source_id):
+    '''
+    Function that returns the source's articles.
+    '''
+
+    article_source = get_articles(source_id)
+
+    title = f"{source_id} Articles"
+    
+    return render_template('article.html', title=title, articles=article_source)
