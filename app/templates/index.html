@@ -1,44 +1,77 @@
 {% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+
+{% block content %}
 
 <section class="container">
-    <h4>General</h4>
-    <ul>
-        
-    </ul>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">General</h4>
+            <ul>
+                {{macro.displaySource(general)}}
+            </ul>
+        </div>
+    </div>
 </section>
 <section class="container">
-    <h4>Business</h4>
-    <ul>
-
-    </ul>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">Business</h4>
+            <ul>
+                {{macro.displaySource(business)}}
+            </ul>
+        </div>
+    </div>
 </section>
 <section class="container">
-    <h4>Entertainment</h4>
-    <ul>
-
-    </ul>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">Entertainment</h4>
+            <ul>
+                {{macro.displaySource(entertainment)}}
+            </ul>
+        </div>
+    </div>
 </section>
 <section class="container">
-    <h4>Health</h4>
-    <ul>
-
-    </ul>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">Health</h4>
+            <ul>
+                {{macro.displaySource(health)}}
+            </ul>
+        </div>
+    </div>
 </section>
 <section class="container">
-    <h4>Science</h4>
-    <ul>
-
-    </ul>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">Science</h4>
+            <ul>
+                {{macro.displaySource(science)}}
+            </ul>
+        </div>
+    </div>
 </section>
 <section class="container">
-    <h4>Sports</h4>
-    <ul>
-
-    </ul>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">Sports</h4>
+            <ul>
+                {{macro.displaySource(sports)}}
+            </ul>
+        </div>
+    </div>
 </section>
 <section class="container">
-    <h4>Technology</h4>
-    <ul>
-
-    </ul>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">Technology</h4>
+            <ul>
+                {{macro.displaySource(technology)}}
+            </ul>
+        </div>
+    </div>
 </section>
+
+{% endblock%}
