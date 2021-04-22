@@ -32,3 +32,15 @@ def articles(source_id):
     title = f"{source_id} Articles"
     
     return render_template('articles.html', title=title, articles=article_source)
+
+@main.route('/topheadlines')
+def topheadlines():
+    '''
+    Function that returns top headline articles.
+    '''
+
+    topheadline_articles = get_topheadlines()
+
+    title = 'Top Headlines'
+
+    return render_template('topheadlines.html', title=title, articles = topheadline_articles)
