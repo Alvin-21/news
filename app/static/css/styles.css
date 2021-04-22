@@ -1,0 +1,54 @@
+.nav-bg {
+    background-color: rgb(15, 104, 7);
+    height: 70px;
+    padding: 0 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.font-size {
+    font-size: 16pt;
+}
+
+.colour {
+    color: whitesmoke;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+
+.intro-bg {
+    background-color: black;
+    padding: 0 30px;
+}
+
+.intro-color {
+    color:  rgb(57, 248, 39);
+}
+
+.source-color {
+    color: rgb(15, 104, 7);
+}
+
+.source-dimen {
+    height: 300px;
+    width: 300px;
+}
+
+.article-dimen {
+    height: 500px;
+    width: 100%;
+}
+
+.shadow {
+    box-shadow: 2px 4px 12px 2px rgb(15, 104, 7)
+}
+
+.border {
+    border-style: solid;
+    border-color: rgba(64, 255, 39, 0.973);
+}
