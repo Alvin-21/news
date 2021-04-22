@@ -31,4 +31,4 @@ def articles(source_id):
 
     title = f"{source_id} Articles"
     
-    return render_template('article.html', title=title, articles=article_source)
+    return render_template('articles.html', title=title, articles=article_source)
