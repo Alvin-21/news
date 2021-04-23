@@ -4,10 +4,6 @@
     padding: 0 15px;
 }
 
-.center {
-    text-align: center;
-}
-
 .font-size {
     font-size: 16pt;
 }
@@ -32,11 +28,6 @@ a:hover {
 
 h3 {
     color: rgb(15, 104, 7);
-}
-
-.source-dimen {
-    height: 300px;
-    width: 300px;
 }
 
 .article-dimen {

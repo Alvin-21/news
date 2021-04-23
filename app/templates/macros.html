@@ -1,9 +1,9 @@
 {% macro displaySource(source_list)%}
-<div class="container-fluid">
+<div class="container">
     <div class="row">
     {% for source in source_list %}
             <div class="col-md-3">
-                <div class="card source-dimen shadow border">
+                <div class="card shadow border">
                     <a href="{{source.url}}" target="_blank">
                         <h5>{{source.name}}</h5>
                     </a>
