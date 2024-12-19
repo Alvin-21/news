@@ -15,7 +15,7 @@ The project was set up to showcase to news sources and their articles to the use
 3. Create a virtual environment
 4. Download the necessary resources listed in the requirements.txt file
 5. Run chmod a+x start.py on the terminal
-7. Run ./start.py on the terminal
+7. Run ./start.sh on the terminal
 8. Access the application through the provided link on the terminal
 
 ## Technologies Used
